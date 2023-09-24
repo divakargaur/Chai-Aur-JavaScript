@@ -71,3 +71,35 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser)); // array in array
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // to check if the property is available or not
+
+
+
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+// course.courseInstructor
+const {courseInstructor} = course // aonther way
+const {courseInstructor: ins} = course
+console.log(ins);
+
+
+
+// const navbar = ({company}) => {} // destructuring
+// navbar(company = "hitesh")
+
+
+
+// API ~ apna kaam kisi aur ke sar pe daal dena
+// value are in json
+// {
+//     "name": "hitesh",
+//     "consumeName": "js in hindi",
+//     "price": "free"
+// }
+// [
+//     {},
+//     {},
+//     {}
+// ]
