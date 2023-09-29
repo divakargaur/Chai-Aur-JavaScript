@@ -1,11 +1,9 @@
-* { 
-	box-sizing: border-box;
-}
-
 html, body {
 	min-height: 100%;
 	background: black;
-	color: white;
+	color: cadetblue;
+    text-shadow: 1px 1px 1px white;
+    border-radius: 15px;
 }
 
 nav {
@@ -48,50 +46,50 @@ h1 {
 }
 
 #box1 {
-    background-color: aliceblue;
+    background: aliceblue;
 }
 #box2 {
-    background-color: azure;
+    background: azure;
 }
 #box3 {
-    background-color: antiquewhite;
+    background: antiquewhite;
 }
 #box4 {
-    background-color: blanchedalmond;
+    background: blanchedalmond;
 }
 #box5 {
-    background-color: beige;
+    background: beige;
 }
 #box6 {
-    background-color: cornsilk;
+    background: cornsilk;
 }
 #box7 {
-    background-color: bisque;
+    background: bisque;
 }
 #box8 {
-    background-color: burlywood;
+    background: burlywood;
 }
 #box9 {
-    background-color: aquamarine;
+    background: aquamarine;
 }
 #box10 {
-    background-color: chartreuse;
+    background: chartreuse;
 }
 #box11 {
-    background-color: cornflowerblue;
+    background: cornflowerblue;
 }
 #box12 {
-    background-color: violet;
+    background: violet;
 }
 #box13 {
-    background-color: aqua;
+    background: aqua;
 }
 #box14 {
-    background-color: darkcyan;
+    background: darkcyan;
 }
 #box15 {
-    background-color: darkblue;
+    background: darkblue;
 }
 #box16 {
-    background-color: magenta;
+    background: magenta;
 }
