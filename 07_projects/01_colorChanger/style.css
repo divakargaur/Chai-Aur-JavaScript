@@ -1,0 +1,97 @@
+* { 
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+	background: black;
+	color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: cadetblue;
+    border-radius: 15px;
+    height: 100px;
+}
+
+.nav-button {
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    padding-inline: 100px;
+    margin-top: 25px;
+    margin-inline: 50px;
+    color: white;
+    font-size: large;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin-inline: 25px;
+    border-radius: 15px;
+}
+
+#box1 {
+    background-color: aliceblue;
+}
+#box2 {
+    background-color: azure;
+}
+#box3 {
+    background-color: antiquewhite;
+}
+#box4 {
+    background-color: blanchedalmond;
+}
+#box5 {
+    background-color: beige;
+}
+#box6 {
+    background-color: cornsilk;
+}
+#box7 {
+    background-color: bisque;
+}
+#box8 {
+    background-color: burlywood;
+}
+#box9 {
+    background-color: aquamarine;
+}
+#box10 {
+    background-color: chartreuse;
+}
+#box11 {
+    background-color: cornflowerblue;
+}
+#box12 {
+    background-color: violet;
+}
+#box13 {
+    background-color: aqua;
+}
+#box14 {
+    background-color: darkcyan;
+}
+#box15 {
+    background-color: darkblue;
+}
+#box16 {
+    background-color: magenta;
+}
