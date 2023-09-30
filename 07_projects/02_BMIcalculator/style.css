@@ -2,15 +2,18 @@ html, body {
     background: black;
     color: white;
     height: 100%;
-    font-size: x-large;
+    font-size: larger;
 }
 
 nav {
+    border: 3px solid white;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     border-radius: 15px;
     height: 100px;
+    margin-bottom: 9px;
 }
 
 .nav-button {
@@ -40,6 +43,13 @@ form h1{
     padding: 10px;
 }
 
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #input {
     text-align: center;
 }
@@ -59,4 +69,14 @@ form h1{
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+button {
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    margin: 40px;
+    font-size: xx-large;
+    cursor: pointer;
 }
