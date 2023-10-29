@@ -1,3 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 html, body {
     height: 100%;
     background: black;
@@ -21,14 +28,19 @@ nav {
     padding: 15px;
     padding-inline: 100px;
     margin-top: 25px;
-    margin-inline: 50px;
+    margin-inline: 25px;
     color: white;
     font-size: large;
 }
 
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 h1 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 20px;
 }
 
 .canvas {
