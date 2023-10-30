@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    background: black;
+    color: cyan;
+}
+
+nav {
+    height: 100px;
+    background: cyan;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: x-large;
+    font-weight: 900;
+    background: gold;
+    border-radius: 5px;
+    padding-inline: 70px;
+    padding-block: 7px;
+    margin-inline: 50px;
+}
+
+main {
+    text-align: center;
+    margin: 13em;
+}
+
+#clock {
+    background: gold;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    height: 70px;
+    width: 200px;
+    border-radius: 15px;
+    margin-inline: auto;
+    padding-block: 20px;
+}
