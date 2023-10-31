@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTS</title>
+  </head>
+  <body style="background: black; color: cyan">
+    <h2>Amazing image</h2>
+    <div>
+      <ul id="image">
+        <li>
+          <img
+            width="200px"
+            id="photoshop"
+            src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt="photoshop"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="japan"
+            src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="river"
+            src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="owl"
+            src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="prayer"
+            src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            alt=""
+          />
+        </li>
+        <li>
+          <a
+            style="color: cyan; text-decoration: none"
+            href="https://google.com"
+            id="google"
+            target="_blank"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script>
+        // document.getElementById("owl").onclick = event => {alert("owl")}
+        // attachEvent()
+        // jQuery - on
+
+        // addEventListener(event, function, useCapture)
+        // addEventListener("...", function(...){...}, false/true)
+        // function(parameter)/event -> eventObject
+        // type, timestamp, defaultPrevented
+        // target, toElement, srcElement, currentTarget
+        // clientX, clientY, screenX, screenY
+        // altKey, ctrlKey, shiftKey, keyCode
+
+        // EVENT PROPAGATION
+        // -----------------
+        // Event Bubbling -> if the third method is false (first owl then image)
+        // Event Capturing -> if the third method is true (first image then owl)
+        // .stopPropagation -> to stop the propagation (only owl or image)
+        // false -> default for third method
+
+        document.getElementById("owl").addEventListener("click", event => {alert("owl");}, false)
+        document.getElementById("image").addEventListener("click", event => {alert("image");}, false)
+        document.getElementById("google").addEventListener("click", event => {event.preventDefault(); event.stopPropagation();}, false)
+
+        // document.getElementById("image").addEventListener("click", event => {event.target.remove()}, false)                                                                  // to remove the image only
+        document.getElementById("image").addEventListener("click", event => {(((event.target).parentNode).parentNode).removeChild(event.target.parentNode)}, false)             // to remove the whole li element
+    </script>
+  </body>
+</html>
