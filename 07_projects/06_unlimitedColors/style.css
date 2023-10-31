@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    background: black;
+    color: cyan;
+    height: 100vh;
+}
+
+nav {
+    height: 100px;
+    background: cyan;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: x-large;
+    font-weight: 900;
+    background: gold;
+    border-radius: 5px;
+    padding-inline: 70px;
+    padding-block: 7px;
+    margin: 50px;
+}
+
+main {
+    text-align: center;
+    margin-block: 10em;
+}
