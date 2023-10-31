@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GUESS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href=""><button>Home</button></a>
+      <a href="https://github.com/divakargaur" target="_blank"
+        ><button>GitHub</button></a
+      >
+    </nav>
+    <main>
+        <h1>Number Guessing Game</h1>
+        <p>Try and Guess a Random Number between 1 And 100</p>
+        <p>You have 10 Attempts to Guess the Actual Number</p>
+        <form>
+            <h1>Guess The Number</h1>
+            <label for="user-guess"><input type="text" id="user-guess"></label>
+            <label for="submit"><input type="submit" id="submit"></label>
+        </form>
+        <div id="results">
+            <p>Previous Guess: <span id="prev-guess"></span></p>
+            <p>Attempts Remaining: <span id="remain-attempt">10</span></p>
+            <p id="upORlow"></p>
+        </div>
+    </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
