@@ -1,0 +1,13 @@
+html, body {
+    background: black;
+    color: cyan;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
