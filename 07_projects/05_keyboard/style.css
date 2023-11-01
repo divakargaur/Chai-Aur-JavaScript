@@ -35,6 +35,15 @@ main {
     margin-block: 10em;
 }
 
+table, th, td {
+    border: 2px solid gold;
+}
+
 table {
     margin-inline: auto;
+    margin-block: 5em;
+}
+
+th, td {
+    padding: 1em;
 }
