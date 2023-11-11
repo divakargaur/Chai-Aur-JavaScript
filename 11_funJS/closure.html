@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOSURE</title>
+  </head>
+  <body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+  </body>
+  <script>
+    // lexical scoping
+    function init() {
+      let name = "Mozilla";
+      function displayName() {
+        console.log(name);
+      }
+      displayName();
+    }
+    init();
+
+    // closure
+    function makeFunc() {
+      const name = "Mozilla";
+      function displayName() {
+        console.log(name);
+      }
+      return displayName;
+    }
+    const myFunc = makeFunc();
+    myFunc();
+
+    // implementation
+    // document.getElementById("orange").onclick = () => {document.body.style.background = "orange"}
+    // document.getElementById("green").onclick = () => {document.body.style.background = "green"}
+    function clickHandler(color) {
+        return function () {
+            document.body.style.background = `${color}`
+        }
+    }
+    document.getElementById("orange").onclick = clickHandler("orange")
+    document.getElementById("green").onclick = clickHandler("green")
+  </script>
+</html>
